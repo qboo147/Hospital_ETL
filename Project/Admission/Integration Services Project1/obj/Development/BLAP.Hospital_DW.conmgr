@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="BLAP.Hospital_DW"
+  DTS:DTSID="{D8259DD8-8870-4375-894E-D0CB615BC29B}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=BLAP;Initial Catalog=Hospital_DW;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Integration Services Project1-{D8259DD8-8870-4375-894E-D0CB615BC29B}BLAP.Hospital_DW;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

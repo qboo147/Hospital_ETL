@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="BLAP.Covid19"
+  DTS:DTSID="{C52823FA-66DA-468F-8786-E3BD29458934}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=BLAP;Initial Catalog=Covid19;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Integration Services Project1-{C52823FA-66DA-468F-8786-E3BD29458934}BLAP.Covid19;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

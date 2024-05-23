@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Hopital_SSAS</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>Iedl2P8pQyNU0M+2DW0moO9Rps4=23-May-24 7:48:00 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Hospital DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>uEOSCpKL0tIb9+l54wRL4MFhO54=23-May-24 9:05:34 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Hospital DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>irHa8XrQuXnnyk+3IBSuvAMfg6Q=23-May-24 7:47:24 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Dim Person Health</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>r06W1tcKt6KaSg61Sq14FKsoQ7I=23-May-24 7:47:24 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Dim Habbit</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dCf/aA97H2eDj7FCj70tuHRIGMA=23-May-24 9:05:34 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Dim Anaemia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>glJ79gl5XEteyS5SAH9Ps5Rp+YY=23-May-24 7:47:24 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Q/l8qCsMsMdY4WHhnGFbUXjj7rE=23-May-24 7:47:24 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Dim Person</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Hg4BAcqgBdYLRriorHoieN+YlYE=23-May-24 7:47:24 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Fact Admission Report</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sSAHNXuKrAsXcOM9sxEuwR2x7iQ=23-May-24 7:47:24 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Dim Diagnosis</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>iMlH34LW9T/cYhxInUo1PTmh8oA=23-May-24 9:05:34 AM23-May-24 7:47:24 AMzHy7Tu4IerKXjIApf4LoIis924g=23-May-24 7:47:24 AM23-May-24 7:47:24 AM</TimeStamp>
+        <ID>
+          <String>Hospital DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>IiAVXzT1z9HUr5n+V/X0xFJsZa8=23-May-24 7:47:24 AM23-May-24 7:47:24 AM</TimeStamp>
+      <ID>
+        <String>Hopital_SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-05-23T02:05:36.14Z</LastDeployed>
+</DeploymentSnapshot>

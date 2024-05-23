@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Hopital_SSAS", "Hopital_SSAS\Hopital_SSAS.dwproj", "{C8988A80-55E5-45BD-AE19-7DAB3E0A5476}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8988A80-55E5-45BD-AE19-7DAB3E0A5476}.Development|Default.ActiveCfg = Development
+		{C8988A80-55E5-45BD-AE19-7DAB3E0A5476}.Development|Default.Build.0 = Development
+		{C8988A80-55E5-45BD-AE19-7DAB3E0A5476}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DD94DD7-873E-4C89-AE81-86FD452DA9C1}
+	EndGlobalSection
+EndGlobal

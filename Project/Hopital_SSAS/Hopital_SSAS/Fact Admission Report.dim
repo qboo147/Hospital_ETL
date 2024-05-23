@@ -1,0 +1,268 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7add7d87-a59d-4f93-acf4-a41165cbb852" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Admission Report</ID>
+  <Name>Fact Admission Report</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-85" scrolltop="-5704" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7324" y="16320" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactAdmissionReport" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="6668" height="4466" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000c1a000072110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactAdmissionReport" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-85</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5704</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1b9733af-2e14-4ab8-a5a3-a69661c25f79">
+    <DataSourceViewID>Hospital DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="1384c942-b4c9-4922-964e-e2f44671c1f0">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7a5e4075-5b23-4b6e-89f6-e2b34ff613aa">
+      <ID>SNO</ID>
+      <Name>SNO</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="885928ce-1264-4b14-b6a4-6220d10e3e7f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8ff4267d-2c61-4ec9-8a6e-c32047a8ba99">
+            <TableID>dbo_FactAdmissionReport</TableID>
+            <ColumnID>SNO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="30ab9dc6-834a-4ea9-a9ff-2d9d12d84c22">
+          <AttributeID>Person Health ID</AttributeID>
+          <Name>Person Health ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="34271992-5571-4289-b682-1c8d87e807d5">
+          <AttributeID>Habbit ID</AttributeID>
+          <Name>Habbit ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fbaa2121-69d3-41c5-844c-810d46812eab">
+          <AttributeID>Anaemia ID</AttributeID>
+          <Name>Anaemia ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9746134f-f769-4cf9-bd8b-35e0d7c336e5">
+          <AttributeID>Discharge Date ID</AttributeID>
+          <Name>Discharge Date ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="09757959-df66-46e7-b125-9f83b88c985d">
+          <AttributeID>Admission Date ID</AttributeID>
+          <Name>Admission Date ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8a8afb53-824c-483c-be1c-ae7e9a61b8df">
+          <AttributeID>Person ID</AttributeID>
+          <Name>Person ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cb022c39-5729-4610-b582-dd24acda9d47">
+          <AttributeID>TYPE OF ADMISSION-EMERGENCYOPD</AttributeID>
+          <Name>TYPE OF ADMISSION-EMERGENCYOPD</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3bc5a31c-9f05-4188-8f43-d284a9ea9cbc">
+          <AttributeID>OUTCOME</AttributeID>
+          <Name>OUTCOME</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="279a8fab-a47f-414a-8843-5ed0ad20332f">
+      <ID>Person Health ID</ID>
+      <Name>Person Health ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a66fb3ac-44cc-443f-8c22-637eb7c60be6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc490ed7-8c1d-4132-b95b-85b543bb0039">
+            <TableID>dbo_FactAdmissionReport</TableID>
+            <ColumnID>PersonHealthID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="406779dc-9fa9-4992-a6d7-8a66bd2432ce">
+      <ID>Habbit ID</ID>
+      <Name>Habbit ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a1297fa-c3f1-45ce-9d4d-1d26d3690539">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8143d04a-da0e-4a56-a6e3-dfbb77ccbd13">
+            <TableID>dbo_FactAdmissionReport</TableID>
+            <ColumnID>HabbitID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="de54491c-d0cc-4c09-8b60-7881ff0036e7">
+      <ID>Anaemia ID</ID>
+      <Name>Anaemia ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="97e5b588-2011-460c-a313-d0a15b4aa928">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="110c4c7e-a74a-468d-90f3-e0097692193a">
+            <TableID>dbo_FactAdmissionReport</TableID>
+            <ColumnID>AnaemiaID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6a3469bd-cdc0-4241-8f81-479f7aca9687">
+      <ID>Discharge Date ID</ID>
+      <Name>Discharge Date ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0594b7d6-dbf4-4af3-a199-27f454c63ed9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef8ed3f7-13a0-43d9-8e2e-c54839454015">
+            <TableID>dbo_FactAdmissionReport</TableID>
+            <ColumnID>DischargeDateID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2cabf0ea-5b8c-44c9-95fa-77a4a1cf9830">
+      <ID>Admission Date ID</ID>
+      <Name>Admission Date ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ef0f41e1-9c17-4472-8b99-d30095305bee">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="589be37f-562b-4218-bb50-2e0ca67c9bbf">
+            <TableID>dbo_FactAdmissionReport</TableID>
+            <ColumnID>AdmissionDateID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4c98316b-50db-4cf8-b83a-0bf1850080b4">
+      <ID>Person ID</ID>
+      <Name>Person ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b6fcb125-d3b6-443b-859d-8d864e28855e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0157ecc-5418-4382-809a-c3fac93d208d">
+            <TableID>dbo_FactAdmissionReport</TableID>
+            <ColumnID>PersonID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="48c59423-fd11-4442-a085-662ebab4120e">
+      <ID>TYPE OF ADMISSION-EMERGENCYOPD</ID>
+      <Name>TYPE OF ADMISSION-EMERGENCYOPD</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="adcd38bf-1121-4e1f-a220-f5523d1d4b40">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="633d2aa2-5bb9-4956-96bb-4a6e0f30a4ad">
+            <TableID>dbo_FactAdmissionReport</TableID>
+            <ColumnID>TYPE_x0020_OF_x0020_ADMISSION-EMERGENCY_x002F_OPD</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e788493e-314a-432b-9eed-1f4bf25a67a0">
+      <ID>OUTCOME</ID>
+      <Name>OUTCOME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7083f6d6-21d7-44d8-bd24-e1c51e6c92f0">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="401d58a4-4e91-45f6-b20b-c878ee810d3c">
+            <TableID>dbo_FactAdmissionReport</TableID>
+            <ColumnID>OUTCOME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

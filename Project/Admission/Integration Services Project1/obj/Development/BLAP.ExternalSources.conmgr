@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="BLAP.ExternalSources"
+  DTS:DTSID="{9DC5C47A-FF59-4E64-98DF-5F25A98EC8AB}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=BLAP;Initial Catalog=ExternalSources;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Integration Services Project1-{9DC5C47A-FF59-4E64-98DF-5F25A98EC8AB}BLAP.ExternalSources;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
